@@ -62,5 +62,14 @@
       port = "3457",
       uri = "asia.pcmining.xyz",
       WorkerPage = ""
+  },
+  {
+      ID = 8,
+      Name = "Lucky-Mining(UA)",
+      fee = "0.15%!!",
+      port = "2017",
+      uri = "safe.lucky-mining.com.ua",
+      WorkerPage = "https://safe.lucky-mining.com.ua/index.php?page=account&action=workers"
   }
 ]
+

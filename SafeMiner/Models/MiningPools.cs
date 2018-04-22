@@ -82,6 +82,13 @@ namespace SafeMiner.Models
                     fee = "1%!!",
                     port = "3457",
                     uri = "asia.pcmining.xyz"
+                },
+                {
+                    ID = 8,
+                    Name = "Lucky-Mining(UA)",
+                    fee = "0.15%!!",
+                    port = "2017",
+                    uri = "safe.lucky-mining.com.ua"
                 }
             };
 
