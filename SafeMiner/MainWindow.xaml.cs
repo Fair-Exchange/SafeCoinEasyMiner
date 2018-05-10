@@ -81,8 +81,13 @@ namespace SafeMiner
                     procs.Add(StartClaymore());
 
                 MiningButton.Content = "Stop Mining!";
-                ViewWorkerTextBlock.Visibility = Visibility.Visible;
-                ViewWorkerHyperLink.NavigateUri = new Uri(pools[SelectPoolComboBox.SelectedIndex].WorkerPage.Replace("|ADDR|",walletAddressTextBox.Text));
+                
+                if (pools[SelectPoolComboBox.SelectedIndex].WorkerPage!=null)
+                {
+                    ViewWorkerTextBlock.Visibility = Visibility.Visible;
+                    ViewWorkerHyperLink.NavigateUri = new Uri(pools[SelectPoolComboBox.SelectedIndex].WorkerPage.Replace("|ADDR|", walletAddressTextBox.Text));
+                }
+                
                 mining = true;
             }
             else
